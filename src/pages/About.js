@@ -13,7 +13,7 @@ export default function About() {
   return (
     <>
       {/* header */}
-      <div classNameName="header_box">
+      <div className="header_box">
         <Header></Header>
       </div>
 
