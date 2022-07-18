@@ -4,6 +4,12 @@ import Header from "../components/Header";
 import Breadcrumb from "../components/Breadcrumb";
 
 export default function About() {
+
+  const path=[
+    {name:'首页',href:'/'},
+    {name:'公司',href:'/news'},
+    {name:'列表',href:'/news'},
+  ]
   return (
     <>
       {/* header */}
@@ -12,7 +18,7 @@ export default function About() {
       </div>
 
       {/* breadcrumb */}
-      <Breadcrumb ></Breadcrumb>
+      <Breadcrumb path={path} ></Breadcrumb>
 
       {/* main */}
       <div className="main container">
