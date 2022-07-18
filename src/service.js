@@ -44,11 +44,11 @@ service.newsDetail = function (nid) {
   return fetch(url).then((res) => res.json());
 };
 
-//根据新闻ID返回新闻详情
-service.newsDetail = function (nid) {
-  let url = service.url + "data/news_detail.php?nid=" + nid;
-  return fetch(url).then((res) => res.json());
-};
+// //根据新闻ID返回新闻详情
+// service.newsDetail = function (nid) {
+//   let url = service.url + "data/news_detail.php?nid=" + nid;
+//   return fetch(url).then((res) => res.json());
+// };
 
 //按发布时间逆序返回新闻列表
 service.newsSelect = function (pageNum) {

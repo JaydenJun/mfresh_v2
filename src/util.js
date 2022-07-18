@@ -1,7 +1,7 @@
 /***此模块包含一些常用的工具(Utility)方法***/
 
 //对日期进行格式化
-export let formatDate = function (num) {
+export let formatDate = function (num, format = "sormat") {
   num = parseInt(num);
   let d = new Date(num);
 
@@ -15,8 +15,8 @@ export let formatDate = function (num) {
   let mi = d.getMinutes();
   mi = mi < 10 ? "0" + mi : mi;
 
-  //   return `${yy}-${mo}-${dd} ${hh}:${mi}`;
-  return `${yy}-${mo}-${dd}`;
+  if (format === "long") { return `${yy}-${mo}-${dd} ${hh}:${mi}`; }
+  else { return `${yy}-${mo}-${dd}`; }
 };
 
 //生成指定范围内的随机数
