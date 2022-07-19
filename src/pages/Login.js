@@ -1,5 +1,8 @@
 import React, { useState, useRef } from "react";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
+=======
+>>>>>>> c9e614568cdcbdc56d3355e14dbcc1e5ddacd15f
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import service from "../service";
@@ -15,7 +18,11 @@ export default function Login() {
   let upwdRef = useRef();
   //状态变量 —— 用户名相关的错误提示
   let [unameMsg, setUnameMsg] = useState("");
+<<<<<<< HEAD
   let nav = useNavigate()
+=======
+
+>>>>>>> c9e614568cdcbdc56d3355e14dbcc1e5ddacd15f
   //点击“登录”按钮后，执行登录操作
   function doLogin() {
     let n = emailOrPhoneRef.current.value; //登录名
@@ -30,11 +37,14 @@ export default function Login() {
           setUnameMsg("用户名不能为空");
         } else if (data.code === 1) {
           setUnameMsg("登录成功");
+<<<<<<< HEAD
           sessionStorage['uid'] = data.uid
           sessionStorage['userName'] = data.uname
           let p = sessionStorage = ['pathBeforeLogin']
           p = p ? p : '/'
           nav(p)
+=======
+>>>>>>> c9e614568cdcbdc56d3355e14dbcc1e5ddacd15f
         } else {
           setUnameMsg("未知的错误");
         }
