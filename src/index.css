@@ -114,6 +114,7 @@ a:hover {
 }
 
 .h_login {
+  border: none;
   display: block;
   width: 46px;
   height: 20px;
